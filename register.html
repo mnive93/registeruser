@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>register.html</title>
+<style>
+body
+{
+background-color:black;
+}
+#im
+{
+margin-left:50px;
+width:900px;
+height:900px;
+background-image:url('wall.jpg');
+}
+.textbox{
+margin-left:120px;
+margin-top:70px;
+background-color:#0B6121;
+border-radius:10px;
+height:600px;
+width:200px;
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+<div id="im">
+<form action="servlet/Register" method="post">
+<div class="textbox">
+Name:<input type="text" name="userName"/><br/><br/>
+Password:<input type="password" name="userPass"/><br/><br/>
+Department:
+<select name="dept">
+<option>cse</option>
+<option>eee</option>
+<option>ece</option>
+<option>mech</option>
+</select> <br/> <br/>
+Section:
+<select name="sec">
+<option>A</option>
+<option>B</option>
+</select><br/> <br/>
+Year:<input type="text" name="year"/><br/><br/>
+Email Id:<input type="text" name="userEmail"/><br/><br/>
+Country:
+<select name="userCountry">
+<option>India</option>
+<option>Pakistan</option>
+<option>other</option>
+</select>
+
+<br/><br/>
+<input type="submit" name="op" value="register"/>
+
+</form>
+</div>
+</body>
+</html>

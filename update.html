@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>update.html</title>
+<style>
+body
+{
+background-color:black;
+}
+#im
+{
+margin-left:50px;
+width:900px;
+height:900px;
+background-image:url('wall.jpg');
+}
+</style>
+</head>
+
+<body>
+<div id="im">
+<form action="servlet/Register" method="post">
+
+Name:<input type="text" name="userName"/><br/><br/>
+Password:<input type="password" name="userPass"/><br/><br/>
+
+Section:
+<select name="sec">
+<option>A</option>
+<option>B</option>
+</select><br/> <br/>
+Year:<input type="text" name="year"/><br/><br/>
+Email Id:<input type="text" name="userEmail"/><br/><br/>
+
+<br/><br/>
+
+
+<input type="submit" name="op" value="update"/>
+</form>
+</body>
+</html>
